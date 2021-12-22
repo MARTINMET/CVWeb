@@ -1,0 +1,187 @@
+:root {
+    --oscuro: #1D1D1B;
+    --secundario: #87848E;
+}
+
+
+/**FUENTE**/
+
+@font-face {
+    font-family: 'Dillan';
+    src: url(../font/Dillan.otf);
+}
+
+
+/*GENERICOS*/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Dillan', Verdana, Tahoma, sans-serif;
+    color: var(--oscuro)
+}
+
+h1 {
+    text-transform: capitalize;
+    font-size: 7rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    font-family: 'Lato', Verdana, Tahoma, sans-serif;
+    color: var(--secundario);
+}
+
+body {
+    font-size: 16px;
+    background: linear-gradient(to right, rgba(252, 233, 238, 1) 0%, rgba(253, 241, 242, 1) 22%, rgba(254, 251, 247, 1) 49%, rgba(240, 225, 239, 1) 92%, rgba(237, 220, 237, 1) 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.nav-redes {
+    padding: 3rem 0;
+    text-align: right;
+}
+
+.nav-redes nav a {
+    color: #000000;
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+
+.nav-redes nav a :first-child {
+    color: #000000;
+    font-size: 2.5rem;
+
+}
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: auto;
+}
+
+.imagen {
+    background-image: url(../image/imagencv.jpg);
+    background-size: cover;
+    border-radius: 2rem;
+    height: 450px;
+    border: .9rem solid #000000;
+    box-shadow: 14px 11px 40px -16px rgba(0, 0, 0, 0.61);
+}
+
+@media (min-width: 768px) {
+    .main_index {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+}
+
+.saludo-presentacion p {
+    font-size: 2rem;
+}
+
+.saludo-presentacion span {
+    font-weight: 700;
+}
+
+
+/**CARDS EXPERIENCIA y APTITUDES**/
+
+@media (min-width: 768px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 2rem;
+    }
+}
+
+.cards {
+    margin: 10rem 0 0 0;
+}
+
+.card_Exp {
+    border-radius: 2rem;
+    background: linear-gradient(135deg, rgba(255, 238, 197, 1) 0%, rgba(255, 238, 197, 1) 21%, rgba(251, 218, 224, 1) 83%, rgba(251, 218, 224, 1) 100%);
+    padding: 2.5rem;
+    box-shadow: -4px 10px 16px -17px rgba(0, 0, 0, 0.73);
+    margin: 0 0 1.5rem 0;
+}
+
+.card_Exp span {
+    font-weight: 700;
+}
+
+.card_Exp h2 {
+    text-align: center;
+}
+
+.card_aptitudes {
+    border-radius: 2rem;
+    background: linear-gradient(to right, rgba(214, 203, 229, 1) 0%, rgba(161, 199, 226, 1) 100%);
+    padding: 2.5rem;
+    box-shadow: 11px 10px 16px -17px rgba(0, 0, 0, 0.73);
+    margin: 0 0 1.5rem 0;
+}
+
+.card_aptitudes h2 {
+    text-align: center;
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: column;
+}
+
+.enlaces a {
+    font-family: 'lato', Verdana, Tahoma, sans-serif;
+    text-decoration: none;
+    color: var(--secundario);
+    font-weight: 700;
+    margin: .3rem;
+}
+
+
+/**FOOTER SALUDO**/
+
+.saludo {
+    margin: 9rem 0 4rem 0;
+}
+
+.saludo p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.saludo h3 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 7rem;
+}
